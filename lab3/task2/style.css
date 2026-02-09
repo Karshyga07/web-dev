@@ -1,0 +1,46 @@
+body {
+    height: 90%;
+    width: 120%;
+    
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+.app {
+  width: 400px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.input-box {
+    height: 90%;
+    width: 120%;
+    display: flex;
+    gap: 1px;
+}
+
+input {
+    flex: 1;
+    padding: 15px;
+}
+
+button {
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 3px solid #ddd;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
