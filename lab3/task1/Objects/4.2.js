@@ -5,6 +5,11 @@ let user = {
 
 let clone = {};
 
+while(i < 10){ 
+
+  let text =+ "apple" + i;
+  alert(text);
+}
 
 for (let key in user) {
   clone[key] = user[key];
