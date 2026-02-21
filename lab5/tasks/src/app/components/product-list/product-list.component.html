@@ -1,0 +1,13 @@
+<div class="product-list">
+
+  <div *ngIf="products.length === 0" class="empty-message">
+    <p>Нет товаров в этой категории</p>
+  </div>
+  
+  <div *ngFor="let product of products" class="product-item-wrapper">
+    <app-product-item 
+      [product]="product"
+      (delete)="onDeleteProduct($event)">
+    </app-product-item>
+  </div>
+</div>

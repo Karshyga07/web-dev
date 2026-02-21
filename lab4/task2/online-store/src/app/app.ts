@@ -16,7 +16,7 @@ export class AppComponent {
       id: 1,
       name: 'Чехол для Apple iPhone 13 серый',
       description: 'чехол для телефона',
-      price: 389,
+      price: 38900,
       rating: 4.9,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p4f/p07/14525019.png?format=gallery-medium',
       images: [

@@ -1,0 +1,26 @@
+<div class = 'app-container'>
+  <h1>Online-store</h1>
+
+  <div class = 'categories'>
+    <button *ngFor="let category of categories"
+      (click)="selectCategory(category.id)"
+      [class.active]="selectedCategoryId === category.id">
+      {{ category.name }}
+    </button>
+  </div>
+
+  <div class = 'content'>
+    <app-product-list *ngIf="selectedCategoryId; else noCategory"
+      [products]="filteredProducts"
+      (productDeleted)="onProductDeleted($event)">
+    </app-product-list>
+
+    <ng-template #noCategory>
+      <div class="welcome-message">
+        <h2>Добро пожаловать!</h2>
+        <p>Выберите категорию товаров</p>
+      </div>
+    </ng-template>
+  </div>
+
+</div>
