@@ -17,7 +17,6 @@ export class ProductItemComponent {
     this.product.likes++;
     
   }
- 
   confirmDelete() {
     if (confirm('Вы уверены, что хотите удалить этот товар?')) {
       this.delete.emit(this.product.id);
@@ -29,6 +28,7 @@ export class ProductItemComponent {
     const message = `Посмотри этот товар: ${this.product.name} - ${this.product.link}`;
     window.open(`https://wa.me/?text=${encodeURIComponent(message)}`);
   }
+  
   
   shareOnTelegram() {
     const message = `Посмотри этот товар: ${this.product.name} - ${this.product.link}`;
