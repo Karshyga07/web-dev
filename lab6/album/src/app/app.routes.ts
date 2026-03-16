@@ -4,6 +4,7 @@ import { About } from './about/about';
 import { AlbumDetailComponent } from './album-detail/album-detail';
 import { AlbumPhotosComponent } from './album-photos/album-photos';
 import { Albums } from './albums/albums';
+import {Men} from './men/men';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -11,5 +12,6 @@ export const routes: Routes = [
   { path: 'about', component: About },
   { path: 'albums', component: Albums },
   { path: 'albums/:id', component: AlbumDetailComponent },
-  { path: 'albums/:id/photos', component: AlbumPhotosComponent }
+  { path: 'albums/:id/photos', component: AlbumPhotosComponent },
+  { path: 'men', component: Men}
 ];
