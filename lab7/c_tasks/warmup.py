@@ -1,9 +1,13 @@
-#  def spleep_in(weekday, vacation):
+# def spleep_in(weekday, vacation):
 #     if not weekday or vacation:
 #         return True
 #     else:
 #         return False
     
+# print(spleep_in(False, False))
+# print(spleep_in(True, False))
+# print(spleep_in(False, True))
+
 
 
 # def monkey_trouble(a_smile, b_smile):
