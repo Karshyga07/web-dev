@@ -5,7 +5,6 @@ from api.models import Category, Product
 from api.serializers import CategorySerializer, ProductSerializer
 from django.shortcuts import get_object_or_404
 
-# Категория тізімі және жасау
 class CategoryListAPIView(APIView):
     def get(self, request):
         categories = Category.objects.all()
@@ -19,7 +18,7 @@ class CategoryListAPIView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-# Бір категорияны алу, өзгерту, өшіру
+
 class CategoryDetailAPIView(APIView):
     def get_object(self, category_id):
         return get_object_or_404(Category, id=category_id)
@@ -42,7 +41,7 @@ class CategoryDetailAPIView(APIView):
         category.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-# Бір категориядағы өнімдер
+
 class CategoryProductsAPIView(APIView):
     def get(self, request, category_id):
         category = get_object_or_404(Category, id=category_id)
